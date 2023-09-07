@@ -1,0 +1,186 @@
+@font-face {
+  font-family: Noto Sans Myanmar UI;
+  font-weight: 300;
+  src: url("/fonts/NotoSansMyanmarUI-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Noto Sans Myanmar UI;
+  font-weight: 400;
+  src: url("/fonts/NotoSansMyanmarUI-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Noto Sans Myanmar UI;
+  font-weight: 500;
+  src: url("/fonts/NotoSansMyanmarUI-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Noto Sans Myanmar UI;
+  font-weight: 600;
+  src: url("/fonts/NotoSansMyanmarUI-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Noto Sans Myanmar UI;
+  font-weight: 700;
+  src: url("/fonts/NotoSansMyanmarUI-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #fafafa;
+  font-family: Noto Sans Myanmar UI, -apple-system, BlinkMacSystemFont, Roboto,
+    Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif !important;
+}
+
+#__next {
+  height: 100%;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-background {
+  background: #f3f4f6;
+}
+
+.bg-primary-darker {
+  background: #6303bd;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu-macos {
+  gap: 0.25rem;
+  padding: 0.5rem;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.dropdown-menu-macos .dropdown-item {
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu-macos .dropdown-item:hover {
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: var(--bs-primary);
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.my-list-item {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.my-list-item svg {
+  color: #757575;
+}
+.my-list-item:hover svg {
+  color: var(--bs-primary);
+}
+
+.my-list-item:hover {
+  border-radius: 0.25rem;
+  font-weight: 500;
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+}
+
+.my-list-item.active {
+  color: var(--bs-primary);
+  background-color: var(--bs-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+.my-list-item.active svg {
+  color: var(--bs-primary);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* width */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 3px;
+}
+
+/* Handle */
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(1, 0, 0); /* Black fallback color */
+  background-color: rgb(1, 0, 0, 0.5); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}

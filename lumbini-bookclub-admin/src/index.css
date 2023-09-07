@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Inter;
+    font-weight: 200;
+    src: url(../public/fonts/Inter-ExtraLight.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 300;
+    src: url(../public/fonts/Inter-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(../public/fonts/Inter-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 500;
+    src: url(../public/fonts/Inter-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 600;
+    src: url(../public/fonts/Inter-SemiBold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: Inter;
+    font-weight: 700;
+    src: url(../public/fonts/Inter-Bold.ttf) format("truetype");
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+
+  ol {
+    @apply list-decimal list-inside;
+  }
+
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  h4 {
+    @apply text-xl font-semibold;
+  }
+  a {
+    @apply text-blue-600 font-medium;
+  }
+
+  p {
+    @apply mb-2;
+  }
+
+  blockquote {
+    @apply my-3;
+  }
+}
+
+@layer components {
+  .dropdown-item {
+    @apply flex rounded-md items-center w-full px-2 py-2 text-sm text-gray-900;
+  }
+
+  .dropdown-item.active {
+    @apply bg-indigo-600 text-white;
+  }
+
+  .side-menu-item {
+    @apply lg:mx-3 py-4 lg:py-2 lg:px-3 flex justify-center lg:justify-start space-x-4 items-center truncate text-gray-400 lg:rounded-md hover:text-white hover:bg-gray-700;
+  }
+
+  .side-menu-item.active {
+    @apply text-white bg-gray-900;
+  }
+
+  .side-menu-item .icon {
+    @apply w-8 h-8 lg:w-5 lg:h-5 flex-none;
+  }
+
+  .alert-success {
+    @apply text-green-700 text-sm p-3 bg-green-100 rounded-md;
+  }
+
+  .alert-error {
+    @apply text-red-700 text-sm p-3 bg-red-100 rounded-md;
+  }
+
+  .btn-primary {
+    @apply font-medium inline-flex items-center justify-center p-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded;
+  }
+
+  .btn-secondary {
+    @apply font-medium inline-flex items-center justify-center p-2 bg-gray-300 hover:bg-gray-400 text-gray-700 rounded;
+  }
+
+  .btn-danger {
+    @apply font-medium inline-flex items-center justify-center p-2 bg-red-600 hover:bg-red-800 text-white rounded;
+  }
+
+  .form-control-label {
+    @apply block font-medium text-gray-800 mb-1;
+  }
+
+  .form-control {
+    @apply border w-full border-gray-300 rounded focus:ring-0 focus:border-indigo-500;
+  }
+
+  .form-control.invalid {
+    @apply border-red-600;
+  }
+
+  .form-control-error {
+    @apply font-medium text-xs text-red-600 mt-1;
+  }
+
+  .form-control-group-end {
+    @apply border w-full border-gray-300 rounded-l focus:ring-0 focus:border-indigo-500;
+  }
+
+  .form-control-group-end.invalid {
+    @apply border-red-600;
+  }
+
+  .page-container {
+    @apply rounded-md border divide-x bg-white overflow-hidden;
+  }
+
+  .page-nav {
+    @apply px-3 py-1.5 inline-flex justify-center focus:outline-none text-indigo-600 hover:bg-gray-100;
+  }
+
+  .page-item {
+    @apply w-9 py-1.5 inline-flex justify-center focus:outline-none text-indigo-600 hover:bg-gray-100;
+  }
+
+  .page-item.active {
+    @apply text-white bg-indigo-600;
+  }
+
+  .page-nav.disabled {
+    @apply text-gray-400 bg-gray-50;
+  }
+
+  .chip-default {
+    @apply px-2 py-1 rounded-full bg-gray-100 hover:bg-gray-200 font-medium text-xs text-gray-600;
+  }
+
+  .chip-item {
+    @apply flex items-center px-2 py-1 rounded-full bg-gray-100 hover:bg-gray-200 font-medium text-sm text-gray-600;
+  }
+
+  .chip-item.active {
+    @apply bg-indigo-600 hover:bg-indigo-700 text-white;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* width */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+/* Handle */
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+/* Handle on hover */
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
