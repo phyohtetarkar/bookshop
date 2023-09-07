@@ -1,9 +1,9 @@
 {
-    "banner": {
-        "image": "<string>",
-        "linkTo": "<string>",
-        "index": "<number>"
-    },
+    "banner": [
+        "homeBanner": {
+            "images": "<string-array>",
+        },
+    ],
 
     "category": {
         "id": "<string>",
