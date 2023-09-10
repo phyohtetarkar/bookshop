@@ -169,7 +169,8 @@ This project use firebase auth for admin login with email and password. This pro
 
 ### Firestore
 
-Collections as shown in [data model](https://github.com/phyohtetarkar/bookshop/edit/main/README.md#data-model)
+Collections as shown in **data model**
+
 - banners
 - authors
 - categories
